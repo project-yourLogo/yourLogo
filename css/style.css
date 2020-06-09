@@ -21,6 +21,7 @@
   text-align: center;
   color: #5D82E1;
   font-weight: 600;
+  margin-bottom: 90px;
 }
 
 body {
@@ -522,9 +523,102 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 
 .oppotunity {
   padding-top: 90px;
+  padding-bottom: 220px;
 }
 
-.oppotunity-item__svg {
-  width: 115px;
-  height: 140px;
+.oppotunity-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.oppotunity-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #ffffff;
+  flex-basis: 49%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 24px 32px rgba(0, 0, 0, 0.04);
+  position: relative;
+  padding: 60px 60px;
+  box-sizing: border-box;
+  margin-bottom: 80px;
+}
+
+.oppotunity-item:last-child {
+  margin-bottom: 0;
+}
+
+.oppotunity-item:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.oppotunity-item:nth-child(1) {
+  padding: 49px 60px;
+}
+
+.oppotunity-item:nth-child(2) {
+  padding: 49px 60px;
+}
+
+.oppotunity-item__title {
+  font-size: 24px;
+  color: #4068CF;
+  font-weight: 600;
+  margin-bottom: 17px;
+}
+
+.oppotunity-item__desc {
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  font-weight: 400;
+  flex: 1 1 auto;
+}
+
+.oppotunity-item__image {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.oppotunity-item__image img {
+  display: block;
+  max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .oppotunity-item {
+    flex-basis: 100%;
+  }
+  .oppotunity-item:nth-child(3) {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .oppotunity-item {
+    margin-bottom: 50px;
+  }
+  .oppotunity-item:nth-child(3) {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .oppotunity-item {
+    margin-bottom: 30px;
+    padding: 30px 30px;
+  }
+  .oppotunity-item:nth-child(3) {
+    margin-bottom: 30px;
+  }
+  .oppotunity-item:nth-child(1) {
+    padding: 30px 30px;
+  }
+  .oppotunity-item:nth-child(2) {
+    padding: 30px 30px;
+  }
 }
