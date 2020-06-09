@@ -16,6 +16,13 @@
   max-width: 1125px;
 }
 
+.main-title {
+  font-size: 36px;
+  text-align: center;
+  color: #5D82E1;
+  font-weight: 600;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #f1f5ff;
@@ -273,11 +280,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 .main-gradient {
   padding-top: 57px;
   background: radial-gradient(55.41% 101.69% at 0% 0%, rgba(100, 135, 223, 0.6) 0%, rgba(25, 88, 244, 0) 100%);
-  background-color: rgba(25, 88, 244, 0) 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .working {
-  background: url("../images/Section_1_bg.png") no-repeat right center/cover;
+  background: url("../images/Section_1_bg.png") no-repeat center center/cover;
   height: 100vh;
   padding-top: 140px;
 }
@@ -350,8 +358,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   content: '';
   display: block;
   position: absolute;
-  background-image: url("/images/icons/search.svg");
-  top: calc(50% - 12px);
+  background-image: url("../images/icons/search.svg");
+  top: calc(50% - 9px);
   left: 16px;
   width: 19px;
   height: 19px;
@@ -367,6 +375,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   background: #F0F0F0;
   border-radius: 8px;
   border: none;
+}
+
+.working .form-keywords__input::placeholder {
+  font-size: 18px;
+  color: #9D9D9D;
+  font-weight: 400;
 }
 
 .working .form-keywords__desc {
@@ -396,7 +410,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 .working .form-specialism__arrow::before, .working .form-specialism__arrow::after {
   content: '';
   background-color: #ffffff;
-  width: 10px;
+  width: 12px;
   height: 2px;
   display: block;
   position: absolute;
@@ -412,7 +426,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 .working .form-specialism__arrow::before {
   transform: rotate(45deg);
   top: 50%;
-  left: 54%;
+  left: 55%;
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
@@ -426,6 +440,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   background: #F0F0F0;
   border-radius: 8px;
   border: none;
+}
+
+.working .form-specialism__input::placeholder {
+  font-size: 18px;
+  color: #9D9D9D;
+  font-weight: 400;
 }
 
 .working .form-specialism__desc {
@@ -498,4 +518,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   .working__list li {
     font-size: 18px;
   }
+}
+
+.oppotunity {
+  padding-top: 90px;
+}
+
+.oppotunity-item__svg {
+  width: 115px;
+  height: 140px;
 }
