@@ -12,7 +12,7 @@
   padding: 0px 15px;
 }
 
-.container-working {
+.container-content {
   max-width: 1125px;
 }
 
@@ -277,7 +277,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 }
 
 .working {
-  background: url("/images/Section_1_bg.png") no-repeat right center/cover;
+  background: url("../images/Section_1_bg.png") no-repeat right center/cover;
   height: 100vh;
   padding-top: 140px;
 }
