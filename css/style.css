@@ -638,6 +638,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 }
 
 .find {
+  position: relative;
   margin-bottom: 240px;
 }
 
@@ -696,6 +697,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   font-weight: 500;
 }
 
+.findElem {
+  background-image: url("../images/icons/findElement.svg");
+  display: block;
+  width: 376px;
+  height: 797px;
+  position: absolute;
+  top: -362px;
+  right: -10px;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media (max-width: 1130px) {
   .find-item__title {
     font-size: 16px;
@@ -715,7 +729,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   .find-item {
     flex-basis: 48%;
     height: 500px;
-    margin-bottom: 30px;
+    margin: 0 auto 30px auto;
   }
   .find-item:last-child {
     margin-bottom: 0;
