@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
 .wrap {
   overflow: hidden;
   min-height: 100%;
@@ -22,6 +23,13 @@
   color: #5D82E1;
   font-weight: 600;
   margin-bottom: 90px;
+}
+
+@media (max-width: 375px) {
+  .main-title {
+    margin-bottom: 60px;
+    font-size: 26px;
+  }
 }
 
 body {
@@ -620,5 +628,111 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   }
   .oppotunity-item:nth-child(2) {
     padding: 30px 30px;
+  }
+}
+
+@media (max-width: 375px) {
+  .oppotunity {
+    padding-bottom: 60px;
+  }
+}
+
+.find {
+  margin-bottom: 240px;
+}
+
+.find-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.find-item {
+  height: 575px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 32%;
+}
+
+.find-item__el {
+  background-color: #fff;
+  border-radius: 15px;
+  position: relative;
+  padding: 30px 0 30px 30px;
+  box-sizing: border-box;
+}
+
+.find-item__title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.find-item__position {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #7495EA;
+  height: 100%;
+  border-radius: 15px;
+  width: 88px;
+}
+
+.find-item__position p {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 36px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+}
+
+.find-item__position p span {
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (max-width: 1130px) {
+  .find-item__title {
+    font-size: 16px;
+  }
+  .find-item__position p {
+    font-size: 30px;
+  }
+  .find-item__position p span {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .find-body {
+    flex-wrap: wrap;
+  }
+  .find-item {
+    flex-basis: 48%;
+    height: 500px;
+    margin-bottom: 30px;
+  }
+  .find-item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 715px) {
+  .find-item {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .find-item__position {
+    width: 66px;
+  }
+  .find-item__el {
+    padding-left: 15px;
   }
 }
