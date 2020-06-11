@@ -734,6 +734,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   .find-body {
     flex-wrap: wrap;
   }
+  .find {
+    margin-bottom: 150px;
+  }
   .find-item {
     flex-basis: 48%;
     height: 500px;
@@ -753,6 +756,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 @media (max-width: 375px) {
   .find-item__position {
     width: 66px;
+  }
+  .find {
+    margin-bottom: 100px;
   }
   .find-item__el {
     padding-left: 15px;
@@ -878,4 +884,53 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   display: block;
   max-width: 100%;
   border-radius: 11px;
+}
+
+@media (max-width: 768px) {
+  .slider-item__texts {
+    flex: 1 1 45.5%;
+  }
+  .slider__prew, .slider__next {
+    width: 55px;
+    height: 55px;
+  }
+  .slider-item__subtitle p {
+    font-size: 15px;
+  }
+  .slider-item__btn {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .slider-item {
+    flex-wrap: wrap;
+  }
+  .slider-item__texts {
+    flex: 0 0 100%;
+    margin-bottom: 30px;
+  }
+  .slider-item__img {
+    flex-basis: 50%;
+    margin: 0 auto;
+  }
+  .slider-item__texts {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .slider-item__img {
+    display: none;
+  }
+  .slider__prew {
+    left: initial;
+    right: 90px;
+  }
+  .slider__prew, .slider__next {
+    top: 91%;
+  }
+  .slider-body {
+    padding: 0;
+  }
 }
