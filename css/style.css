@@ -765,26 +765,51 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 
 .slider__prew, .slider__next {
   position: absolute;
+  display: block;
   top: 50%;
   transform: translate(0, -50%);
   width: 70px;
   height: 70px;
   border-radius: 100%;
   background-color: #fff;
+  cursor: pointer;
+}
+
+.slider__prew::before, .slider__next::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 17px;
+  height: 17px;
+  top: 50%;
+  left: 50%;
 }
 
 .slider__prew {
-  right: 0;
+  left: 15px;
+}
+
+.slider__prew::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+  border-bottom: 2px solid #7495EA;
+  border-left: 2px solid #7495EA;
 }
 
 .slider__next {
-  left: 0;
+  right: 15px;
+}
+
+.slider__next::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+  border-top: 2px solid #7495EA;
+  border-right: 2px solid #7495EA;
 }
 
 .slider-body {
   max-width: 900px;
   padding: 0 50px;
   margin: 0 auto;
+  padding: 0px 80px;
 }
 
 .slider-item {
@@ -853,17 +878,4 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   display: block;
   max-width: 100%;
   border-radius: 11px;
-}
-
-.dd, .ss {
-  position: absolute;
-  top: 50%;
-}
-
-.dd {
-  left: 15px;
-}
-
-.ss {
-  right: 15px;
 }
