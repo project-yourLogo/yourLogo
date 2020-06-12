@@ -766,6 +766,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 }
 
 .slider {
+  position: relative;
   margin-bottom: 245px;
 }
 
@@ -884,6 +885,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   display: block;
   max-width: 100%;
   border-radius: 11px;
+}
+
+.sliderElem {
+  background-image: url("../images/icons/sliderElement.svg");
+  display: block;
+  position: absolute;
+  width: 350px;
+  height: 800px;
+  top: -160px;
+  left: -10px;
+  z-index: -1;
 }
 
 @media (max-width: 768px) {
