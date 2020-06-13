@@ -1,0 +1,26 @@
+<svg width="967" height="653" viewBox="0 0 967 653" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_ddd)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M652.659 -353.692C547.676 -323.424 484.278 -215.09 386.595 -164.497C279.36 -108.957 109.003 -154.904 53.5181 -43.3764C-2.82556 69.8771 134.515 193.794 144.962 321.197C154.158 433.334 57.3203 553.488 110.471 651.114C163.593 748.688 309.848 722.632 398.027 786.022C496.404 856.744 534.282 1027.24 652.659 1040.89C767.845 1054.16 864.601 939.917 941.608 848.666C1007.26 770.866 991.471 646.034 1053.94 565.373C1134.57 461.26 1328.07 453.565 1350.12 321.197C1370.67 197.78 1199.57 132.969 1144.45 21.9453C1086.01 -95.7759 1120.6 -268.725 1018.53 -346.691C918.051 -423.438 772.352 -388.201 652.659 -353.692Z" fill="#C6E0FE"/>
+</g>
+<defs>
+<filter id="filter0_ddd" x="0" y="-416.558" width="1359.82" height="1482.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="0.5"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dx="-2"/>
+<feGaussianBlur stdDeviation="3"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0"/>
+<feBlend mode="normal" in2="effect1_dropShadow" result="effect2_dropShadow"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dx="-16"/>
+<feGaussianBlur stdDeviation="12"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"/>
+<feBlend mode="normal" in2="effect2_dropShadow" result="effect3_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow" result="shape"/>
+</filter>
+</defs>
+</svg>

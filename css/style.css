@@ -37,6 +37,10 @@
   }
 }
 
+.main-title--icons {
+  margin-bottom: 170px;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #f1f5ff;
@@ -102,6 +106,17 @@ input {
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
   display: block;
+}
+
+.ibg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.ibg img {
+  display: none;
 }
 
 .header {
@@ -777,7 +792,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 .slider__prew, .slider__next {
   position: absolute;
   display: block;
-  top: 50%;
+  top: 232.5px;
   transform: translate(0, -50%);
   width: 70px;
   height: 70px;
@@ -960,6 +975,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   }
 }
 
+.icons {
+  margin-bottom: 140px;
+}
+
 .icons__body {
   display: flex;
   flex-wrap: wrap;
@@ -1045,4 +1064,42 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   .icons__item:last-child {
     margin: 0 auto;
   }
+}
+
+.job-container {
+  display: flex;
+  background-color: #B9D8FC;
+}
+
+.job-image {
+  flex-basis: 50%;
+}
+
+.job-image__img {
+  height: 100%;
+}
+
+.job-right {
+  position: relative;
+  flex-basis: 50%;
+}
+
+.job-right__texts {
+  padding: 55px 0 130px 120px;
+  position: relative;
+  z-index: 3;
+}
+
+.job-image1 {
+  position: absolute;
+  top: 0;
+  left: -150px;
+  z-index: 1;
+}
+
+.job-image2 {
+  position: absolute;
+  top: 0;
+  left: -120px;
+  z-index: 2;
 }
