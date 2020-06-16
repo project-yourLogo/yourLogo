@@ -56,3 +56,16 @@ function ibg (){
   }
 }
 ibg();;
+const scrolling = (selectorUp) => {
+    const up = document.querySelector(selectorUp)
+    window.addEventListener('scroll',function(){
+        if(document.documentElement.scrollTop > 1600){
+            up.style.opacity = '1'
+            up.style.transition = '0.4s ease'
+        } else{
+            up.style.opacity = '0'
+            up.style.transition = '0.4s ease'
+        }
+    })
+}
+scrolling('.anchor');
