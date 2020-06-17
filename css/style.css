@@ -1242,6 +1242,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 .footer__link a {
   text-decoration: none;
   color: #363940;
+  transition: 0.2s ease;
+}
+
+.footer__link a:hover {
+  color: #6487DF;
+  transition: 0.2s ease;
 }
 
 .footer__link--span span {

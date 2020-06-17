@@ -67,5 +67,57 @@ const scrolling = (selectorUp) => {
             up.style.transition = '0.4s ease'
         }
     })
+    const body = document.body,
+          element = document.documentElement
+    
+    const calcScroll = () => {
+        up.addEventListener('click',function(event){
+            let scrollTop = Math.round(body.scrollTop || element.scrollTop)
+
+            if(this.hash !== ''){
+                event.preventDefault()
+                let elemHash = document.querySelector(this.hash),
+                    parentHash = 0
+                
+                while(elemHash.offsetParent){
+                    parentHash += elemHash.offsetTop
+                    elemHash = elemHash.offsetParent
+                }
+
+                parentHash = Math.round(parentHash)
+                smoothScroll(scrollTop, parentHash, this.hash)
+
+            }
+        })
+    }
+    const smoothScroll = (from, to, hash) =>{
+        let timeInterval = 1,
+            prevScrollTop,
+            speed
+        
+        if(to > from){
+            speed = 30
+        }else{
+            speed = -30
+        }
+
+        let move = setInterval(function(){
+            let scrollTop = Math.round(body.scrollTop || element.scrollTop)
+
+            if(
+                prevScrollTop === scrollTop ||
+                (to > from && scrollTop >= to) ||
+                (to < from && scrollTop <= to)
+            ){
+                clearInterval(move)
+                history.replaceState(history.state, document.title, location.href.replace(/#.*$/g, '') + hash)
+            } else{
+                body.scrollTop += speed
+                element.scrollTop += speed
+                prevScrollTop = scrollTop
+            }
+        }, timeInterval)
+    }
+    calcScroll()
 }
 scrolling('.anchor');
